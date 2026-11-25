@@ -27,23 +27,25 @@ AI 需要具备本机文件操作、运行程序和管理 MCP 的能力。只有
 | 管理地址 | 改址、删除短地址、自动新增、交换、全量寻址、通道重置 |
 | 整理交付 | 工程备份、比较和受支持配置恢复，Excel、名称备注与平面图资料 |
 
-[查看完整功能与适用范围](FUNCTIONS.md) · [第一次使用](GET-STARTED.md) · [常见问题](FAQ.md)
+[查看完整功能与适用范围](FUNCTIONS.md) · **[各功能调试提示词：直接复制使用](PROMPTS.md)** · [第一次使用](GET-STARTED.md) · [常见问题](FAQ.md)
 
 ## 下载
 
-**[下载 0.47 主安装包：MCP + 两个 Skill](https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/DALI-Toolkit-0.47-install.zip)**
+**[下载 0.47 主安装包：MCP + 两个 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip)**
 
 通常只需这个 ZIP。请交给 AI 按上面的安装流程处理；解压不等于安装完成，也不是双击即用的独立桌面 App。
 
 | 单独下载 | 用途 |
 | --- | --- |
-| [MCP 调试 Skill](https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-mcp-control-0.47.zip) | 指导 AI 直接使用网关 MCP；仍需要已安装的 MCP 服务 |
-| [上位机操作 Skill](https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-config-computer-use-0.47.zip) | 指导 AI 操作 DALI Config Tool；需要客户端另有 Computer Use 能力与厂家软件 |
+| [MCP 调试 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-mcp-control-0.47.zip) | 指导 AI 直接使用网关 MCP；仍需要已安装的 MCP 服务 |
+| [上位机操作 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-config-computer-use-0.47.zip) | 指导 AI 操作 DALI Config Tool；需要客户端另有 Computer Use 能力与厂家软件 |
 | [SHA256 校验值](SHA256SUMS.txt) | 核对下载文件是否完整一致 |
 
-下载指向维护仓库的同一份正式 Release 附件，两个仓库共用版本与校验值。**不要点击 GitHub 的“Download ZIP”代替安装包。**
+下载文件由本客户仓库直接提供，版本与校验值见 [release.json](release.json)。**不要点击 GitHub 的“Download ZIP”代替安装包。**
 
 ## 开始调试
+
+**[打开完整调试提示词库](PROMPTS.md)**：24 类功能，每类多个例子，涵盖网关、调灯、场景、分组、九类参数、六项地址管理、工程、Excel、平面图和上位机界面操作。
 
 安装验证完成后，可以这样说：
 
@@ -59,4 +61,4 @@ AI 需要具备本机文件操作、运行程序和管理 MCP 的能力。只有
 
 [版本变化](CHANGELOG.md) · [安装流程（给 AI）](INSTALL.md) · [更新流程（给 AI）](UPDATE.md) · [问题反馈](SUPPORT.md)
 
-当前交付为 Windows MCP 和两个 Skill。iOS App 尚未发布；本版不需要授权码。开发维护、协议与测试资料在[源码仓库](https://github.com/appleyancheng-art/dali-toolkit)。
+当前交付为 Windows MCP 和两个 Skill。iOS App 尚未发布；本版不需要授权码。

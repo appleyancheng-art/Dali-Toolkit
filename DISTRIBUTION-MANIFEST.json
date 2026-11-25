@@ -1,20 +1,24 @@
 {
   "runtime_version": "0.47",
-  "source_commit": "fea4b1923ec880be39213b07bb8b213c0900da6b",
-  "distribution_revision": "2026-11-26.1",
+  "distribution_version": "0.47-customer.1",
+  "documentation_revision": "2026-11-26.2",
   "files": {
-    "AGENTS.md": "d1553f826b4565c33845e7d5368f50a341d899ed2596aede117c1dcc1ee937c0",
-    "CHANGELOG.md": "618de8d378bf0389ec2ad73001cddc9770091ba11b8565d3bd715249d133033b",
+    "AGENTS.md": "dff14bf99763a4aca5ac8df09d8e76e7f59949723bb62e770ca669d81782c2b1",
+    "CHANGELOG.md": "b5423d39eb6fee5412bcf4e0a9e3e7342915a978cc78c5601712ecf16784d0ff",
     "COMPATIBILITY.md": "8059a248873b29fba0f44b34c2df0655d3502cf5c30f3a8258db34abf8e612b6",
-    "FAQ.md": "811ca794706e2b43f4272ee524c0b8b71705937cc44e0b982ce6a79338204de6",
-    "FUNCTIONS.md": "24064e61233d1f8763a7477224cc08b9056c2a9df92deea489c68344e3c39f8d",
-    "GET-STARTED.md": "8ed4585dc0e0a61defd5760614a78c72e94b04045966a818b464b286900615db",
-    "INSTALL.md": "444d1364bd7c80b0a24a247bb2ab9908cd3ca01b6a32868dfc59dd8b5eb996ab",
-    "README.md": "7db44a8acef369e969b6cb639e72bc7ac7955c9099295c252e0d3600b9875ebe",
-    "RELEASE.md": "52646fc1e85c376ad63791b4634cf61bc31cb7b724dff0a410c44d14937f113d",
-    "SHA256SUMS.txt": "6ac7bbcb68491d37ddfe528ecca7e2f3dcc43c128b7a823b4d6079d18195ddec",
+    "FAQ.md": "f17687e31d35947f9368f95e32045828786e80444beb2d3eea41add2477504d8",
+    "FUNCTIONS.md": "a92a13e62ca24e30c714f9fc5ac852f2a269239673639d0ea6ef199ded574588",
+    "GET-STARTED.md": "d10d22cadfa5b8516391b068405f844d49bae6726c604bd7589109ebac7ce5d6",
+    "INSTALL.md": "6d32b72fa3aab1cbb4e4b9703e884cf05c54c30726fa653bf379cf567a9691af",
+    "PROMPTS.md": "d3d8ef74657cb8ab3d7c9961853f6010f707c53c1730fc0fbbabe60972ea7c5c",
+    "README.md": "b896101e477f814bba279e49e1d63b7a0eb6689eea476d79051726b3035dcef0",
+    "RELEASE.md": "12b86339282a1d1bb7c44ee1ac6d627eb501fbf3e69294b37c53fd7182ae3b5c",
+    "SHA256SUMS.txt": "3326c49b243e4108458d78ac5d957f12ff9db532e1e3b1076a6f2ca5831f8037",
     "SUPPORT.md": "427e4ae9c5ac5ca62f8022e7c29bd9862d9820172e72157dc9df1cfb2b2c94c8",
-    "UPDATE.md": "7f2b9d2e49990a9ff5433c9aabc05ce73bd3f0116ffa1672df4eee52a01d4214",
-    "release.json": "43dbe4c93c2d6e63d9ad359c0708f9de8898219a5205906487b37083f420dc49"
+    "UPDATE.md": "45e0383188bbca739e204959620cf5b5a6335d01d2f7b07cdf62eca02e0dd55c",
+    "packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip": "c58441aba5c744f545d5604ccfb7910db52e614224faf8a560cdd34e8f954d38",
+    "packages/0.47-customer.1/dali-config-computer-use-0.47.zip": "81f2059d5b89e98027119025e51b2c212a96700484c7f4bef691f3e044092e50",
+    "packages/0.47-customer.1/dali-mcp-control-0.47.zip": "e1d37c1b4f76ef8cc6034cedad53e1f3ec5c56db0247d4b1fadde08228c575a9",
+    "release.json": "633a9451ca24452af3d990ff05fa376a030579f2e8a0c0a5002bdb77e2a68672"
   }
 }

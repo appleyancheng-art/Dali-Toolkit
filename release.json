@@ -1,19 +1,4 @@
 {
-  "schema_version": 1,
-  "documentation_revision": "2026-11-23.1",
-  "runtime_version": "0.47",
-  "release_tag": "v0.47",
-  "repository": "https://github.com/appleyancheng-art/dali-toolkit",
-  "release_url": "https://github.com/appleyancheng-art/dali-toolkit/releases/tag/v0.47",
-  "latest_release_api": "https://api.github.com/repos/appleyancheng-art/dali-toolkit/releases/latest",
-  "source_commit": "fea4b1923ec880be39213b07bb8b213c0900da6b",
-  "package": {
-    "name": "DALI-Toolkit-0.47-install.zip",
-    "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/DALI-Toolkit-0.47-install.zip",
-    "sha256": "80c67e672789a04418cdec2bd32d83980a12d066d38f72d4a2119e155bf99ee2",
-    "root": "DALI-Toolkit-0.47",
-    "source_manifest": "MANIFEST.sha256.json"
-  },
   "platform": {
     "os": "Windows",
     "python": "3.12",
@@ -62,32 +47,42 @@
       "external project files and backups"
     ],
     "same_version_same_hash": "skip unless repair requested",
-    "migration": "Side-install 0.47, preserve the original absolute --config, state/gateways, external files, prior release and both Skill backups. Do not replay old address plans; prepare fresh operation-specific plans only when separately requested. Verify actual client-loaded dali_status=0.47 and154 tools. Installation/update is offline only: no device control, readdress/reset, firmware flash or full regression."
+    "migration": "Side-install 0.47, preserve the original absolute --config, state/gateways, external files, prior release and both Skill backups. Do not replay old address plans; prepare fresh operation-specific plans only when separately requested. Verify actual client-loaded dali_status=0.47 and154 tools. Installation/update is offline only: no device control, readdress/reset, firmware flash or full regression.",
+    "same_runtime_documentation_only": "Do not reinstall a working same-runtime version solely for packaging/docs; migrate only when requested."
   },
-  "distribution": {
-    "repository": "https://github.com/appleyancheng-art/dali-toolkit-downloads",
-    "revision": "2026-11-26.1",
-    "artifact_repository": "https://github.com/appleyancheng-art/dali-toolkit",
-    "note": "Same stable Release assets; documentation only, no repackaging.",
-    "downloads": [
-      {
-        "name": "DALI-Toolkit-0.47-install.zip",
-        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/DALI-Toolkit-0.47-install.zip",
-        "sha256": "80c67e672789a04418cdec2bd32d83980a12d066d38f72d4a2119e155bf99ee2",
-        "size": 1974724
-      },
-      {
-        "name": "dali-mcp-control-0.47.zip",
-        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-mcp-control-0.47.zip",
-        "sha256": "e1d37c1b4f76ef8cc6034cedad53e1f3ec5c56db0247d4b1fadde08228c575a9",
-        "size": 117888
-      },
-      {
-        "name": "dali-config-computer-use-0.47.zip",
-        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-config-computer-use-0.47.zip",
-        "sha256": "81f2059d5b89e98027119025e51b2c212a96700484c7f4bef691f3e044092e50",
-        "size": 44691
-      }
-    ]
-  }
+  "schema_version": 2,
+  "runtime_version": "0.47",
+  "distribution_version": "0.47-customer.1",
+  "documentation_revision": "2026-11-26.2",
+  "repository": "https://github.com/appleyancheng-art/dali-toolkit-downloads",
+  "release_manifest_url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/release.json",
+  "download_channel": "customer-repository-packages",
+  "package": {
+    "name": "DALI-Toolkit-0.47-customer.1.zip",
+    "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip",
+    "sha256": "c58441aba5c744f545d5604ccfb7910db52e614224faf8a560cdd34e8f954d38",
+    "size": 364881,
+    "root": "DALI-Toolkit-0.47",
+    "source_manifest": "MANIFEST.sha256.json"
+  },
+  "downloads": [
+    {
+      "name": "DALI-Toolkit-0.47-customer.1.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip",
+      "sha256": "c58441aba5c744f545d5604ccfb7910db52e614224faf8a560cdd34e8f954d38",
+      "size": 364881
+    },
+    {
+      "name": "dali-mcp-control-0.47.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-mcp-control-0.47.zip",
+      "sha256": "e1d37c1b4f76ef8cc6034cedad53e1f3ec5c56db0247d4b1fadde08228c575a9",
+      "size": 117888
+    },
+    {
+      "name": "dali-config-computer-use-0.47.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-config-computer-use-0.47.zip",
+      "sha256": "81f2059d5b89e98027119025e51b2c212a96700484c7f4bef691f3e044092e50",
+      "size": 44691
+    }
+  ]
 }

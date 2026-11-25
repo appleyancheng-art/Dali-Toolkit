@@ -10,13 +10,15 @@
 
 查当前客户端中已有的 `dali_config` MCP、同用途的 DALI 服务和两个同名 Skill。已有安装转 [UPDATE.md](UPDATE.md)，不要新增重复服务。
 
-读取 [GitHub Latest](https://api.github.com/repos/appleyancheng-art/dali-toolkit/releases/latest)：必须非 draft、非 prerelease，tag 与 `release.json` 一致。冲突时刷新两者一次；仍不一致则报告发布元数据尚未同步，不猜版本。只下载其中 `release.json.package.name` 指定的主安装包，校验 SHA256；主包已经包含两个 Skill，不必再下载源码包和独立 Skill 包。
+从本客户仓库读取 `release.json`，核对 runtime_version、distribution_version、package.name/url/sha256 和 platform。下载指定客户安装 ZIP 并核对 SHA256；主包已包含两个 Skill，不必再下载独立 Skill 包。客户文件直接由本仓库 packages 目录提供，不依赖 GitHub Releases Latest，也不从其他仓库寻找安装版。元数据与文件不符时刷新一次后停止，不猜版本。
+
+当前运行版 0.47，客户包 0.47-customer.1。包内 PACKAGE.json 的 release_metadata 指向本仓库；可变的 release.json 不嵌入它自己校验的 ZIP，需从仓库读取。
 
 建议新装目录（可按用户要求调整）：
 
 ```text
 %LOCALAPPDATA%/DALI-Toolkit/
-  versions/v0.47/DALI-Toolkit-0.47/   # 主 ZIP 解压后的程序
+  versions/0.47-customer.1/DALI-Toolkit-0.47/   # 主 ZIP 解压后的程序
   data/default/config.json          # 与程序分离的现场配置
   data/default/state/               # 服务使用中的记录
   data/default/gateways/            # 搜索并选择网关后的配置与记录
@@ -32,7 +34,7 @@
 
 ```powershell
 $DaliRoot = Join-Path $env:LOCALAPPDATA 'DALI-Toolkit'
-$DaliRelease = Join-Path $DaliRoot 'versions/v0.47/DALI-Toolkit-0.47'
+$DaliRelease = Join-Path $DaliRoot 'versions/0.47-customer.1/DALI-Toolkit-0.47'
 $DaliMcp = Join-Path $DaliRelease 'mcp'
 $DaliPython = Join-Path $DaliMcp '.venv/Scripts/python.exe'
 $DaliConfig = Join-Path $DaliRoot 'data/default/config.json'
@@ -49,7 +51,7 @@ if ($LASTEXITCODE -ne 0) { throw 'offline MCP check failed' }
 
 0.47 成功标记为 `Stdio OK: 154 tools`。测试会检查非法参数拒绝，预期错误不等于最终失败。没有 `py` 时用已确认的 Python 3.12 可执行文件替代，不能用不明版本。
 
-普通安装不要运行 `mcp/install.ps1`：0.47 的该脚本会运行完整离线回归，耗时较长。无需删测试或改服务器来提速；`smoke_stdio.py` 已提供安装检查。依赖失败时保留错误并检查包源，不取消锁定版本。
+客户包使用指定的 `smoke_stdio.py` 离线安装检查及其必要依赖，不附带完整开发回归或开发安装脚本。无需另找脚本或改服务器来提速。依赖失败时保留错误并检查包源，不取消锁定版本。
 
 新装时创建配置父目录，仅在目标不存在时从 `mcp/config.example.json` 复制配置。示例不预设网关，存储写入关闭。已有配置不覆盖、不删除字段。服务的 `state/`、`gateways/` 跟随配置所在目录，不能只备份一个 JSON。
 
@@ -99,7 +101,7 @@ Computer Use Skill 不自带电脑控制工具或厂家上位机。没有这些�
 
 重新加载 DALI MCP；在当前客户端确认工具列表及 `dali_status` 的版本为 `release.json.runtime_version`（0.47 共 154 工具）。`dali_status` 是本地状态，**不证明网关在线**。在 Skill 列表或新会话中确认两个名称可识别；当前会话不能刷新时明确标为待客户端重载验证。
 
-在 `installed.json` 记录 runtime_version、release_tag、package_sha256、release_root、python_path、config_path、config_parent、客户端配置位置、两个 Skill 位置和验证结果。若采用用户自定目录，记录实际值，后续不要依赖默认路径猜测。
+在 `installed.json` 记录 runtime_version、distribution_version、package_sha256、release_root、python_path、config_path、config_parent、客户端配置位置、两个 Skill 位置和验证结果。若采用用户自定目录，记录实际值，后续不要依赖默认路径猜测。
 
 按客户端分别记录文件准备、注册切换和实际加载；待重载时保留已验收旧记录及待办，不重复安装或立即回退。state 占用时按 UPDATE.md 核对进程归属，不强杀其他客户端或删除锁文件。
 
