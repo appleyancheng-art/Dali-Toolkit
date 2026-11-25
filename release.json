@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "documentation_revision": "2026-11-23.1",
+  "runtime_version": "0.47",
+  "release_tag": "v0.47",
+  "repository": "https://github.com/appleyancheng-art/dali-toolkit",
+  "release_url": "https://github.com/appleyancheng-art/dali-toolkit/releases/tag/v0.47",
+  "latest_release_api": "https://api.github.com/repos/appleyancheng-art/dali-toolkit/releases/latest",
+  "source_commit": "fea4b1923ec880be39213b07bb8b213c0900da6b",
+  "package": {
+    "name": "DALI-Toolkit-0.47-install.zip",
+    "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/DALI-Toolkit-0.47-install.zip",
+    "sha256": "80c67e672789a04418cdec2bd32d83980a12d066d38f72d4a2119e155bf99ee2",
+    "root": "DALI-Toolkit-0.47",
+    "source_manifest": "MANIFEST.sha256.json"
+  },
+  "platform": {
+    "os": "Windows",
+    "python": "3.12",
+    "dependencies": "mcp/requirements.lock.txt"
+  },
+  "mcp": {
+    "name": "dali_config",
+    "transport": "stdio",
+    "command": "{release_root}/mcp/.venv/Scripts/python.exe",
+    "args": [
+      "{release_root}/mcp/run_server.py",
+      "--config",
+      "{config_path}"
+    ],
+    "startup_timeout_seconds": 60,
+    "tool_timeout_seconds": 2400,
+    "expected_tool_count": 154,
+    "version_tool": "dali_status"
+  },
+  "verification": {
+    "offline_script": "mcp/tests/smoke_stdio.py",
+    "offline_args": [],
+    "success_marker": "Stdio OK: 154 tools",
+    "hardware_required": false,
+    "full_regression_required_for_install": false
+  },
+  "skills": [
+    {
+      "name": "dali-mcp-control",
+      "path": "skills/dali-mcp-control"
+    },
+    {
+      "name": "dali-config-computer-use",
+      "path": "skills/dali-config-computer-use",
+      "requires": "Client-provided Windows Computer Use and installed DALI Config Tool"
+    }
+  ],
+  "update": {
+    "strategy": "side-by-side",
+    "keep_existing_config_path": true,
+    "preserve": [
+      "config parent directory including state and gateways",
+      "client MCP configuration",
+      "installed Skills",
+      "old runtime directory",
+      "external project files and backups"
+    ],
+    "same_version_same_hash": "skip unless repair requested",
+    "migration": "Side-install 0.47, preserve the original absolute --config, state/gateways, external files, prior release and both Skill backups. Do not replay old address plans; prepare fresh operation-specific plans only when separately requested. Verify actual client-loaded dali_status=0.47 and154 tools. Installation/update is offline only: no device control, readdress/reset, firmware flash or full regression."
+  },
+  "distribution": {
+    "repository": "https://github.com/appleyancheng-art/dali-toolkit-downloads",
+    "revision": "2026-11-26.1",
+    "artifact_repository": "https://github.com/appleyancheng-art/dali-toolkit",
+    "note": "Same stable Release assets; documentation only, no repackaging.",
+    "downloads": [
+      {
+        "name": "DALI-Toolkit-0.47-install.zip",
+        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/DALI-Toolkit-0.47-install.zip",
+        "sha256": "80c67e672789a04418cdec2bd32d83980a12d066d38f72d4a2119e155bf99ee2",
+        "size": 1974724
+      },
+      {
+        "name": "dali-mcp-control-0.47.zip",
+        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-mcp-control-0.47.zip",
+        "sha256": "e1d37c1b4f76ef8cc6034cedad53e1f3ec5c56db0247d4b1fadde08228c575a9",
+        "size": 117888
+      },
+      {
+        "name": "dali-config-computer-use-0.47.zip",
+        "url": "https://github.com/appleyancheng-art/dali-toolkit/releases/download/v0.47/dali-config-computer-use-0.47.zip",
+        "sha256": "81f2059d5b89e98027119025e51b2c212a96700484c7f4bef691f3e044092e50",
+        "size": 44691
+      }
+    ]
+  }
+}
