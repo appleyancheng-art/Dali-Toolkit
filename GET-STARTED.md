@@ -36,6 +36,6 @@
 
 ## 6. 后续更新
 
-仍使用同一个[客户仓库链接](https://github.com/appleyancheng-art/dali-toolkit-downloads)，复制首页更新提示词即可。正常升级保留原配置、state、网关记录、工程文件和旧版本；只有文档变化时无需重装。
+仍使用同一个[客户仓库链接](https://github.com/appleyancheng-art/Dali-Toolkit)，复制首页更新提示词即可。正常升级保留原配置、state、网关记录、工程文件和旧版本；只有文档变化时无需重装。
 
 [回到首页](README.md)

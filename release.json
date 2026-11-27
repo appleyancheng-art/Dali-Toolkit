@@ -52,35 +52,35 @@
   },
   "schema_version": 2,
   "runtime_version": "0.47",
-  "distribution_version": "0.47-customer.1",
-  "documentation_revision": "2026-11-26.2",
-  "repository": "https://github.com/appleyancheng-art/dali-toolkit-downloads",
-  "release_manifest_url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/release.json",
+  "distribution_version": "0.47-customer.2",
+  "documentation_revision": "2026-11-27.1",
+  "repository": "https://github.com/appleyancheng-art/Dali-Toolkit",
+  "release_manifest_url": "https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/release.json",
   "download_channel": "customer-repository-packages",
   "package": {
-    "name": "DALI-Toolkit-0.47-customer.1.zip",
-    "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip",
-    "sha256": "c58441aba5c744f545d5604ccfb7910db52e614224faf8a560cdd34e8f954d38",
-    "size": 364881,
+    "name": "DALI-Toolkit-0.47-customer.2.zip",
+    "url": "https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/DALI-Toolkit-0.47-customer.2.zip",
+    "sha256": "eb307fba8bf0a3e8586dc267be6abab463077ee2ba0c7ffd80885b79a1c692b7",
+    "size": 365160,
     "root": "DALI-Toolkit-0.47",
     "source_manifest": "MANIFEST.sha256.json"
   },
   "downloads": [
     {
-      "name": "DALI-Toolkit-0.47-customer.1.zip",
-      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip",
-      "sha256": "c58441aba5c744f545d5604ccfb7910db52e614224faf8a560cdd34e8f954d38",
-      "size": 364881
+      "name": "DALI-Toolkit-0.47-customer.2.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/DALI-Toolkit-0.47-customer.2.zip",
+      "sha256": "eb307fba8bf0a3e8586dc267be6abab463077ee2ba0c7ffd80885b79a1c692b7",
+      "size": 365160
     },
     {
       "name": "dali-mcp-control-0.47.zip",
-      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-mcp-control-0.47.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/dali-mcp-control-0.47.zip",
       "sha256": "e1d37c1b4f76ef8cc6034cedad53e1f3ec5c56db0247d4b1fadde08228c575a9",
       "size": 117888
     },
     {
       "name": "dali-config-computer-use-0.47.zip",
-      "url": "https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-config-computer-use-0.47.zip",
+      "url": "https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/dali-config-computer-use-0.47.zip",
       "sha256": "81f2059d5b89e98027119025e51b2c212a96700484c7f4bef691f3e044092e50",
       "size": 44691
     }

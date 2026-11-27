@@ -8,11 +8,11 @@
 
 首次安装：
 
-> 请安装 https://github.com/appleyancheng-art/dali-toolkit-downloads 。先读 AGENTS.md，再按 INSTALL.md 安装稳定版 MCP 和两个 Skill，完成离线检查并接入我当前使用的客户端。已有配置和数据要保留；安装时不要操作灯具。
+> 请安装 https://github.com/appleyancheng-art/Dali-Toolkit 。先读 AGENTS.md，再按 INSTALL.md 安装稳定版 MCP 和两个 Skill，完成离线检查并接入我当前使用的客户端。已有配置和数据要保留；安装时不要操作灯具。
 
 以后更新：
 
-> 请更新当前客户端的 DALI Toolkit：https://github.com/appleyancheng-art/dali-toolkit-downloads 。只先读 release.json 和 UPDATE.md。保留原配置、数据和旧版本，接着尚未完成的一步处理，不重复安装已准备好的同版本。完成 MCP 入口切换、正常重载、实际版本核对和两个 Skill 更新；不要操作灯具、刷固件或改其他客户端。
+> 请更新当前客户端的 DALI Toolkit：https://github.com/appleyancheng-art/Dali-Toolkit 。只先读 release.json 和 UPDATE.md。保留原配置、数据和旧版本，接着尚未完成的一步处理，不重复安装已准备好的同版本。完成 MCP 入口切换、正常重载、实际版本核对和两个 Skill 更新；不要操作灯具、刷固件或改其他客户端。
 
 AI 需要具备本机文件操作、运行程序和管理 MCP 的能力。只有网页聊天或只支持远程 MCP 的客户端，不能直接启动本套件。详见[使用条件](COMPATIBILITY.md)。
 
@@ -31,14 +31,14 @@ AI 需要具备本机文件操作、运行程序和管理 MCP 的能力。只有
 
 ## 下载
 
-**[下载 0.47 主安装包：MCP + 两个 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/DALI-Toolkit-0.47-customer.1.zip)**
+**[下载 0.47 主安装包：MCP + 两个 Skill](https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/DALI-Toolkit-0.47-customer.2.zip)**
 
 通常只需这个 ZIP。请交给 AI 按上面的安装流程处理；解压不等于安装完成，也不是双击即用的独立桌面 App。
 
 | 单独下载 | 用途 |
 | --- | --- |
-| [MCP 调试 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-mcp-control-0.47.zip) | 指导 AI 直接使用网关 MCP；仍需要已安装的 MCP 服务 |
-| [上位机操作 Skill](https://raw.githubusercontent.com/appleyancheng-art/dali-toolkit-downloads/main/packages/0.47-customer.1/dali-config-computer-use-0.47.zip) | 指导 AI 操作 DALI Config Tool；需要客户端另有 Computer Use 能力与厂家软件 |
+| [MCP 调试 Skill](https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/dali-mcp-control-0.47.zip) | 指导 AI 直接使用网关 MCP；仍需要已安装的 MCP 服务 |
+| [上位机操作 Skill](https://raw.githubusercontent.com/appleyancheng-art/Dali-Toolkit/main/packages/0.47-customer.2/dali-config-computer-use-0.47.zip) | 指导 AI 操作 DALI Config Tool；需要客户端另有 Computer Use 能力与厂家软件 |
 | [SHA256 校验值](SHA256SUMS.txt) | 核对下载文件是否完整一致 |
 
 下载文件由本客户仓库直接提供，版本与校验值见 [release.json](release.json)。**不要点击 GitHub 的“Download ZIP”代替安装包。**

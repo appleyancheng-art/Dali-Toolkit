@@ -15,6 +15,6 @@ Windows / Python 版本：
 问题出现前最后一次成功操作：
 ```
 
-公开问题可在[客户仓库 Issues](https://github.com/appleyancheng-art/dali-toolkit-downloads/issues)提交。请先去除密码、授权信息、完整日志中的敏感字段、客户名称、内网地址/MAC 和私人项目资料；现场配置、平面图和原始备份不要直接上传到公开仓库。确需完整材料时，通过你与服务方约定的私下渠道提供。
+公开问题可在[客户仓库 Issues](https://github.com/appleyancheng-art/Dali-Toolkit/issues)提交。请先去除密码、授权信息、完整日志中的敏感字段、客户名称、内网地址/MAC 和私人项目资料；现场配置、平面图和原始备份不要直接上传到公开仓库。确需完整材料时，通过你与服务方约定的私下渠道提供。
 
 [回到首页](README.md)

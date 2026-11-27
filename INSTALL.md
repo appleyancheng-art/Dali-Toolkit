@@ -12,13 +12,13 @@
 
 从本客户仓库读取 `release.json`，核对 runtime_version、distribution_version、package.name/url/sha256 和 platform。下载指定客户安装 ZIP 并核对 SHA256；主包已包含两个 Skill，不必再下载独立 Skill 包。客户文件直接由本仓库 packages 目录提供，不依赖 GitHub Releases Latest，也不从其他仓库寻找安装版。元数据与文件不符时刷新一次后停止，不猜版本。
 
-当前运行版 0.47，客户包 0.47-customer.1。包内 PACKAGE.json 的 release_metadata 指向本仓库；可变的 release.json 不嵌入它自己校验的 ZIP，需从仓库读取。
+当前运行版 0.47，客户包 0.47-customer.2。包内 PACKAGE.json 的 release_metadata 指向本仓库；可变的 release.json 不嵌入它自己校验的 ZIP，需从仓库读取。
 
 建议新装目录（可按用户要求调整）：
 
 ```text
 %LOCALAPPDATA%/DALI-Toolkit/
-  versions/0.47-customer.1/DALI-Toolkit-0.47/   # 主 ZIP 解压后的程序
+  versions/0.47-customer.2/DALI-Toolkit-0.47/   # 主 ZIP 解压后的程序
   data/default/config.json          # 与程序分离的现场配置
   data/default/state/               # 服务使用中的记录
   data/default/gateways/            # 搜索并选择网关后的配置与记录
@@ -34,7 +34,7 @@
 
 ```powershell
 $DaliRoot = Join-Path $env:LOCALAPPDATA 'DALI-Toolkit'
-$DaliRelease = Join-Path $DaliRoot 'versions/0.47-customer.1/DALI-Toolkit-0.47'
+$DaliRelease = Join-Path $DaliRoot 'versions/0.47-customer.2/DALI-Toolkit-0.47'
 $DaliMcp = Join-Path $DaliRelease 'mcp'
 $DaliPython = Join-Path $DaliMcp '.venv/Scripts/python.exe'
 $DaliConfig = Join-Path $DaliRoot 'data/default/config.json'
